@@ -1,0 +1,39 @@
+I-labs Limitations:
+	I-labs is a isolated network, which does not have a internet connectivity.
+	You can never take any file into the i-labs from your computer nor the viseversa. you could only work with the tools and scenarios present in the i-labs.
+
+Ec-Council's ilabs Setup
+
+windows 8	10.10.10.8		victim sometimes
+windows 10 	10.10.10.10
+windows 2016	10.10.10.16 www.goodshopping.com / www.moviescope.com	//tools
+windows 2012	10.10.10.12
+Kali Linux (2018 updated) 	10.10.10.11	Attacker Machine
+Ubuntu		10.10.10.9
+
+Android machine :it is not connected.
+////////////////////////
+OS's For Hacker's
+Kali Linux
+Parrot Sec
+Black Arch
+Backbox
+Samurai
+
+My Labs Setup
+
+Updated Kali Linux	Attacker Machine
+
+Windows 7		Victim
+
+Some Vulnerable Linux Machine *
+//
+Pre Req, For Building your own Lab
+i3 or i5 Processor
+250(free) GB HDD,
+8GB of RAM
+Network Connection (Wifi or Ethernet Router)
+
+https://www.hackwithbkob.com/2019/12/tools-for-practicing-hacking-in-home.html
+Kali Linux Creds => User : root/kali , Pass : toor/kali
+Windows 7 Creds => windows7
