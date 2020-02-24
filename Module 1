@@ -1,0 +1,93 @@
+Module 1
+
+What is Hacking ....?
+
+Accessing a protected resource without any authentication / authorization is known as hacking.
+
+Pillars of Security
+
+Confidentiality	(encryption)// data should not be visible to unauthorized people.
+
+Integrity	(Hashing)// data should not be tampered
+
+Availability	(Backups, Proper security mechanisms)// due to security issues, data transmission should not be interrupted.	Ex:DOS
+
+Authenticity	(1, 2 authentication)// should not be able to access anything unless aunthenticated.
+
+Non-Repudation	(Logs)// user cannot deny his activity, every major activity should be logged.
+
+Types Of Hackers///
+
+Black Hat : hacker trying to HARM
+White Hat : hacker trying to Protect Pentester, Security Analyst
+Gray Hat  : hacker trying to do both.
+
+Script Kiddies: just work on tool, with no knowledge on hacking.
+
+------------------------------------------------------
+
+BKOB - Bengaluru( windows xp -> NT Authority -> Created Malware - > Delete Logs)
+
+5 Phases of Hacking.
+
+1. Information Gathering	//Collecting As much as info about your target.70% of your time
+					//Nmap, Mass Scan
+
+2. Exploitation	/ Gaining Access	// getting a low privileged access.
+						//Core impact - Metasploit
+3. Privilege Escalation		// Elevating your access from lower privileges to higher p rivileges Guest-Admin
+						// meterpreter script for post/multi/recon/local_exploit_suggestor
+4. Creating Backdoor 	// Maintaining Access	
+
+5. Clearing Footprints / Clearing logs / Covering Tracks
+
+Pre Exploitation / Information Gathering / Reconnaissance
+Exploitation
+Post Exploitation
+
+Robber => Hacker
+
+Money => Data
+
+Bank  => Computer / Server
+
+Windows
+Guest -> Standard User -> Admin -> NT Authority(H)
+Guest -> Domain User -> Local Admin -> Domain Admin >  NT Authority(H)
+
+Unix
+Guest -> User -> Sudo User* -> Root(H)
+////////////////////////////////
+
+Few Terminologies of Hacking (Security Language)
+
+Vulnerability : a loop hole or weakness which exists on a computer, any device, protocol, scripts, program etc.
+Ex: glass door
+
+Payload : a script or tool which is used to exploit 
+Ex: Hammer, stone
+
+Exploit : its an attack or breach done utilizing a vulnerability
+Ex: entering into to the Bank
+
+Bot : is a backdoor setup by a hacker on a previously compromised machine.
+
+Doxing: publishing privately identified info (usually found by hacking) and posting it into social networks, or internet.
+
+Daisy Chaining: Hacker -> A-> B-> C-> Another Victim
+
+Zero Day Attack / vulnerability:
+       	Paid Game: 2:1:2020	Officially Released
+
+		   3:1:2020	Someone Found A Vulnerability
+
+	Zero day vulnerability
+ 
+------------------------------
+Shadow Brokers 
+
+Eternal Blue + double pulsar backdoor + Wannacry malware(Ransomeware)
+
+Patch Eternal Blue: March 14th
+
+Wannacry Ransomeware May 2017
