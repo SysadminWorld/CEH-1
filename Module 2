@@ -1,0 +1,238 @@
+Module - 02
+
+Information Gathering
+-> Passive IG	M2
+-> Active IG M3,M4,M5
+
+-> Passive IG	M2 / Usually Web based Targets, For Social Engineering 
+Attacks.
+
+Most Common Targets: Websites, Devices Accessible through Internet
+
+Note: Ilabs is not used for this Module
+
+Ipaddress
+Web technologies used
+Physical Address info (Not MAC Address)
+Whois		// https://centralops.net/co/
+History of web pages	// https://web.archive.org/
+DNS info	// https://centralops.net/co/
+Subdomains 
+Hidden files, etc.
+Technologies used internally through Job portals
+
+
+Please install Addons: Netcraft, Wappalyzer, Cookie Quick Manager.
+https://toolbar.netcraft.com/
+
+A small testing website: 
+http://certifiedhacker.com/ 		// Ec-Council's Testing Website
+http://testfire.net			// IBM's Testing Website
+http://test.vulnweb.com/		// Acunetix Testing Website
+https://www.hackwithbkob.com/	// My Website
+
+
+Use google's search engine to help you hack someone
+
+Google Dorks
+GHDB	 Google Hacking Database
+
+site:		// restrict the search queries to a given domain
+intitle:		// would only show you website's title consisting of the given text.
+intext:		// give you all the websites which contains the given text in there web pages
+inurl:		// give you all the websites which contains the given text in there url
+
+filetype:      ,etc
+
+
+always use '-' to negate the given text
+wipro.com		, www.wipro.com
+
+https://www.exploit-db.com/		//Bundle for exploits and hacking scripts
+httrack 
+
+Shodan.io 		// used to find online IOT devices
+
+Open Source Intelligence Gathering Framework // https://osintframework.com/
+
+----------------------------------------------------------------------------------------
+Agenda For Feb-15-2020
+Active Information Gathering
+
+Scanning	// Port Scanning
+Enumeration	// Gathering services leaking information
+Vulnerability Scanning	// how to identify vulnerabilities of the machine.
+
+// Scanning			//Port Scan
+
+Logical Ports // Non Physical Port used to communicate with another computer.
+
+Ports used to connect your computer with other computer for a network activity
+65535 Ports
+Sockets => IP:Port
+127.0.0.1:8080	=> traffic
+
+Protocols =>
+
+TCP (Transmission Control Protocol) & UDP (User Datagram Protocol)
+
+SYN	// Synchronization this flag is used to initiate the connection
+ACK	// Acknowledgement used to acknowledge that data is received
+RST	// Reset used to reset the connection.
+FIN	// Finish used to initiate the end of the communication
+URG	// Urgent used to specify the priority of the data during transmission.
+PSH	// Push used to specify the priority of the data to be processed by the CPU.
+
+https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+
+1-1023 Well known / Reserved Ports	//few ports standardized for specific services	
+		Ex: HTTP-80,FTP-21,SSH-22,SMTP-25,SMB-445,SNMP-161
+
+1024 - 49151 Vendor Specific Ports / Registered Ports
+		Microsoft 3389 RDP, Mysql 3306, Postgresql 5432. 
+
+49152 - 65535 Dynamic Ports
+
+192.168.1.1/24
+
+192.168.1.1 - 192.168.1.254 /24
+
+192.168.1.1 - 192.168.254.254 /16
+
+192.1.1.1 - 192.254.254.254 /8
+
+
+Practical Ports Scanning
+Identify whether target machine is up or not
+identify Open Ports
+identify Services running on those open ports
+identify O.S running
+identify Information Leakage	// not traditionally used in port scanner
+identify Vulnerabilities *	// not traditionally used in port scanner
+
+nmap is the well knowned and most commonly used port scanner
+
+zenmap is gui version of nmap
+
+Cheat Sheet for linux Commands
+https://www.hackwithbkob.com/2018/03/basic-linux-commands.html
+
+Cheatsheet for Nmap commands
+https://www.hackwithbkob.com/2018/04/nmap-cheatsheets.html
+
+live website to perform Port Scanning
+http://scanme.nmap.org/
+any machine on your network
+192.168.1.1-192.168.1.254
+
+Nmap / Port Scanning States
+
+open		// the concerned port is open and receiving communication
+closed		// the concerned port is closed and not receiving communication
+filtered	// some application or configuration is filtering out / stopping data transfer
+
+Assignments:...?
+perform port Scanning on
+windows 2012,
+windows 8
+kali linux
+ubuntu
+
+1.what ports are open
+2.what are the services running on those machine.
+How port Scanning works: 
+http://etutorials.org/Networking/network+security+assessment/Chapter+4.+IP+Network+Scanning/4.2+TCP+Port+Scanning/
+
+Ip address:
+Operating System:
+Ports Open:
+-------------------------------------------------------------------------------------
+
+// Enumeration
+will probe the open port to get more info about target.
+
+445 (SMB) Server Message Block,	shares, username, accuracte o.s version
+161,162 (SNMP)Simple Network Management Protocol	system info, programs installed, Usernames, network info,
+
+1.No Auth
+2.Community Strings(Password)
+	Public, Private
+
+139(TCP),137(UDP)NetBIOS system name
+//
+	
+smbclient	// this would list and help you to view publicly shared files without authentication.
+
+=> smbclient 	// is tool to probe smb port and get info
+=> smbclient -L <target-ip> -N	// will list all shares enabled in the machine
+=> enum4linux -a <target-ip>	// perform detailed enumeration on target machine
+
+=> nmap -p 445 <target-ip> --script=smb*	// will execute all smb based scripts on target
+=> nmap -p 445 <target-ip> --script=smb-enum-*
+=> nmap -p 445 <target-ip> --script=smb-vuln-*
+
+=> nbtscan -r <ip-range>	// to get system's name of the entire network range
+
+=> netdiscover
+
+=> locate *.nse | grep <service name>
+
+---------------------------------------------------------------------------------------
+
+Vulnerability Scanning:
+
+Vulnerability Assessment ,Vulnerability Management
+
+lookout for loopholes or  on your target.
+
+1. RCE (Remote Code Execution)// any thing but should write code for it.
+2. Command Execution. //only executes command allowed by the o.s for the designated user
+3. DOS (Denial Of Service) // Which blocks the authorized user from accessing it.
+4. Backdoor	ES file explorer, CCleaner, Cam Scanner
+5. Information disclosure (85%)
+
+In RCE attacker will be able to execute any code on the victim machine without authentication remotely.
+
+Vulnerability Codes
+
+CVE(Common Vulnerability & Exposures):**	
+CWE(Common Weakeness Enumeration): sans
+MS(Microsoft): its own products vendor
+OSVDB(Open Source Vulnerability Database)
+NVD(National Vulnerability Database)
+
+CVE 2014-6471 shell shock, linux based webservers in 2014
+CVE 2017-0143 eternal blue. MS17-010 windows 7 through SMB port
+
+Infrastructure / web App
+
+Nessus (Trial)*		BurpSuite
+Qualys Guard		App spider
+Acunetix		HCL Appscan
+Nexpose 		Acunetix
+OpenVAS	= FREE		OWASP-ZAP - FREE
+
+Exploitation:
+Metasploit	Community free / paid
+Core Impact	Paid
+Canvas		Paid
+
+After a vulnerability is reported:
+
+Fixing can be done.
+Fixing cannot be done
+
+true positives		rightly stating vulnerability exists
+true negatives		rightly stating vulnerability doesnot exists
+false negatives		wrongly stating the vulnerability doesnot exists
+false positives.	wrongly stating the vulnerability exists
+
+https://10.10.10.16:8834/ / https://127.0.0.1:8834 	ilabs/
+nessus creds: admin / password
+
+Windows 8 and Windows Server 2012 = MS17-010 / CVE 2017-0143	Eternal Blue
+----------------------------------------------------------------------------------------
+
+Blog: www.hackwithbkob.com
+Hacking e-Books: https://ontibaanaadi.blogspot.com/p/hacking-books.html
+
