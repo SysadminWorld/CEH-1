@@ -1,0 +1,88 @@
+Introduction to CEH Certification
+Introduction to Security Domain
+Few Terminologies of Security
+Introduction about i-Labs
+FootPrinting-Lab
+
+Pre-Req:- Networking
+		OSI, IP, ARP,DNS, Network Devices and there behaviour
+	  Linux-Commands
+	  Common Computer Knowledge
+
+Ec-Council
+
+CEH v10
+Certified Ethical Hacker v10
+Level: Beginner 
+Certification which teaches you about basics of various security domains.
+20 Modules. 40 Hours.
+Aim: Knowledge
+Validity : 3Years
+
+ECSA v10
+Ec-Council Certified Security Analyst v10
+Level : Intermediate
+Penetration Testing.
+Aim: Skill
+Validity : 3Years
+
+LPT-Master
+Licensed Penetration Tester
+Level : Advance
+Aim : Proficient 
+Validity : 2Years
+
+What CEH is not.
+
+Penetration Testing
+Vulnerability Assessment	// it teaches VA but not specific into it.
+Security in Defensive		// Offensive	CND
+
+
+What CEH actually is.
+Beginner level Training which tells you basics of 10 diff security domains.
+Teaches you what a attack / breach is, how it is done and why is it possible.
+
+CEH v10
+20 Modules 
+
+First Six modules tells you about basics of security.
+
+3,4 which dont have lab,
+
+125 MCQ(Multiple Choice Questions) 4hours 70%, 87~
+
+/////
+
+My Way of Teaching.
+
+Strictly No PPt's
+Start Basics of Security.
+More Lab
+Notepad 		// for defination and basic understanding
+MS Paint / Google Drawing, 	// understanding the flow
+Ec-Council's Ilabs, Courseware.
+My Own lab Setup.
+
+////////
+Access Code : Will be shared to you from your Co-Ordinator
+Note: Your Access code will take nearly 1,2 week to be generated
+
+Aspen Portal URL : https://aspen.eccouncil.org/
+		// To Download your Courseware, and Certificates.
+Validity : 1 Year
+
+Ilabs URL: https://eccouncil.learnondemand.net/
+		// To Access your Ilabs
+Validity : 6Months
+
+Pre Req:
+	Basic understanding of Network
+	IP, DNS, ARP, TCP, UDP, Ports, 
+
+Book: https://ontibaanaadi.blogspot.com/p/hacking-books.html
+
+//////
+Security:
+	Defensive(Blue Team)	// Protects from hackers through building security controls
+	Offensive(Red Team)	// Tries to hack the system and provides the report to the Concern person
